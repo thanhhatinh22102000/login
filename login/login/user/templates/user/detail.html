@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <h2>Detail</h2><br/>
+<table border="1" bgcolor="#F3F781">
+    <thead>
+        <tr>
+        <th>Title</th>
+        <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% if list %}
+        {% for item in list %}
+            <tr>
+            <td>{{ item.title }}</td>
+            <td>{{ item.description }}</td>
+            </tr>
+        {% endfor %}
+    {% endif %}
+    </tbody>
+</table>
+</center>
+</body>
+</html>
